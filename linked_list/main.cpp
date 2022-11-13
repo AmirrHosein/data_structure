@@ -1,5 +1,4 @@
 #include <iostream>
-#include <stdlib.h>
 using namespace std;
 
 struct Node
@@ -13,10 +12,10 @@ int main()
     struct Node *head;
     struct Node *one, *two, *three, *four = NULL;
 
-    one = (struct Node *)malloc(sizeof(struct Node));
-    two = (struct Node *)malloc(sizeof(struct Node));
-    three = (struct Node *)malloc(sizeof(struct Node));
-    four = (struct Node *)malloc(sizeof(struct Node));
+    one = new Node();
+    two = new Node();
+    three = new Node();
+    four = new Node();
 
     one->data = 1;
     two->data = 2;
